@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    // Azure & Bicep tooling
+    "ms-vscode.azurecli",
+    "ms-azuretools.vscode-bicep",
+    "msazurermtools.azurerm-vscode-tools",
+    "bencoleman.armview",
+    // Azure account & dotnet runtime (required by above)
+    "ms-vscode.azure-account",
+    "ms-dotnettools.vscode-dotnet-runtime",
+    // GitHub & Copilot
+    "github.copilot",
+    "github.copilot-chat",
+    "github.vscode-github-actions"
+  ]
+}

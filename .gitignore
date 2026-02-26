@@ -33,6 +33,7 @@ org-clock-save.el
 emacs-config.el
 .vscode/*
 !.vscode/mcp.json
+!.vscode/extensions.json
 node_modules
 Nese_OMS_NEstedforOMSWS.json
 test/template-validation-tests/package-lock.json
