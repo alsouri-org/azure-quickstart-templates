@@ -10,9 +10,11 @@
 
 	"features": {
 		"ghcr.io/devcontainers/features/azure-cli:1": {},
-		"ghcr.io/devcontainers/features/powershell:1": {},
-		"ghcr.io/devcontainers/features/bicep:1": {}
+		"ghcr.io/devcontainers/features/powershell:1": {}
 	},
+
+	// Install Bicep CLI via Azure CLI after container is created
+	"postCreateCommand": "az bicep install",
 
 	"customizations": {
 		"vscode": {
