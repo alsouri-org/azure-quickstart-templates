@@ -1,0 +1,21 @@
+{
+	"inputs": [
+		{
+			"id": "github_mcp_pat",
+			"type": "promptString",
+			"description": "GitHub PAT (only prompted if GITHUB_MCP_PAT env var is not set — needs: repo, read:org, workflow scopes)",
+			"password": true
+		}
+	],
+	"servers": {
+		"github": {
+			"type": "http",
+			"url": "https://api.githubcopilot.com/mcp/",
+			"headers": {
+				// In Codespaces: automatically uses the GITHUB_MCP_PAT Codespaces secret (env var)
+				// Locally on Debian 12: set GITHUB_MCP_PAT in your shell profile, or it will prompt
+				"Authorization": "Bearer ${env:GITHUB_MCP_PAT}"
+			}
+		}
+	}
+}
