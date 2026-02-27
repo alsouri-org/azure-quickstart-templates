@@ -16,6 +16,13 @@
 				// Locally on Debian 12: set GB_MCP_PAT in your shell profile, or it will prompt
 				"Authorization": "Bearer ${env:GB_MCP_PAT}"
 			}
+		},
+		"azure": {
+			// Azure MCP — uses existing 'az login' session, no extra token needed
+			// Gives Copilot access to Azure subscriptions, resource groups, and resources
+			"type": "stdio",
+			"command": "npx",
+			"args": ["-y", "@azure/mcp@latest", "server", "start"]
 		}
 	}
 }
