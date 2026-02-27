@@ -1,0 +1,19 @@
+name: Copilot Setup Steps
+
+# Prepares the environment for the Copilot coding agent before it starts working.
+# The job name "copilot-setup-steps" is required by GitHub - do not rename it.
+# See: https://docs.github.com/en/copilot/using-github-copilot/using-copilot-coding-agent-to-work-on-tasks/customizing-the-development-environment-for-github-copilot-coding-agent
+
+on:
+  workflow_dispatch:
+
+jobs:
+  copilot-setup-steps:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install Bicep CLI
+        run: az bicep install
