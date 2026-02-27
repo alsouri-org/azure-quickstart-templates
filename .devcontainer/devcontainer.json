@@ -10,7 +10,10 @@
 
 	"features": {
 		"ghcr.io/devcontainers/features/azure-cli:1": {},
-		"ghcr.io/devcontainers/features/powershell:1": {}
+		"ghcr.io/devcontainers/features/powershell:1": {},
+		"ghcr.io/devcontainers/features/node:1": {
+			"version": "lts"
+		}
 	},
 
 	// Install Bicep CLI via Azure CLI after container is created
