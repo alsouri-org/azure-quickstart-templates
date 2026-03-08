@@ -1,7 +1,7 @@
 {
 	"name": "Azure Quickstart Templates (Codespaces / Remote Container)",
 	"image": "mcr.microsoft.com/devcontainers/base:ubuntu-24.04",
-
+	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
 
@@ -10,6 +10,7 @@
 
 	"features": {
 		"ghcr.io/devcontainers/features/azure-cli:1": {},
+		"ghcr.io/devcontainers/features/github-cli:1": {},
 		"ghcr.io/devcontainers/features/powershell:1": {},
 		"ghcr.io/devcontainers/features/node:1": {
 			"version": "lts"
